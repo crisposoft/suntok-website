@@ -6,7 +6,7 @@ This guide will help you deploy the SuntOK website to GitHub Pages.
 
 - A GitHub account
 - Git installed on your computer
-- The SuntOK repository pushed to GitHub
+- Node.js installed (for local development)
 
 ---
 
@@ -15,8 +15,8 @@ This guide will help you deploy the SuntOK website to GitHub Pages.
 If you haven't already, create a repository on GitHub and push your code:
 
 ```bash
-# Navigate to the suntok folder
-cd c:\Users\tudor\Documents\suntok
+# Navigate to the suntok-website folder
+cd c:\Users\tudor\Documents\suntok-website
 
 # Initialize git (if not already done)
 git init
@@ -25,24 +25,42 @@ git init
 git add .
 
 # Commit
-git commit -m "Initial commit - SuntOK app and website"
+git commit -m "Initial commit - SuntOK website"
 
 # Add your GitHub repository as remote (replace with your username)
-git remote add origin https://github.com/YOUR_USERNAME/suntok.git
+git remote add origin https://github.com/YOUR_USERNAME/suntok-website.git
 
 # Push to GitHub
-git push -u origin master
+git push -u origin main
 ```
 
 ---
 
-## Step 2: Configure GitHub Pages
+## Step 2: Update Base URL (Important!)
 
-1. Go to your GitHub repository: `https://github.com/YOUR_USERNAME/suntok`
+The website is configured to deploy at `https://YOUR_USERNAME.github.io/suntok/`
 
-2. Click on **Settings** (top menu)
+If your repository name is different from `suntok`, update the base URL in `vite.config.ts`:
 
-3. In the left sidebar, click **Pages**
+```typescript
+base: mode === 'production' ? '/YOUR_REPO_NAME/' : '/',
+```
+
+For example, if your repo is `suntok-website`:
+
+```typescript
+base: mode === 'production' ? '/suntok-website/' : '/',
+```
+
+---
+
+## Step 3: Configure GitHub Pages
+
+1. Go to your GitHub repository: `https://github.com/YOUR_USERNAME/suntok-website`
+
+2. Click on **Settings** (top menu, gear icon)
+
+3. In the left sidebar, scroll down and click **Pages**
 
 4. Under **Build and deployment**:
    - **Source**: Select **GitHub Actions**
@@ -51,22 +69,10 @@ git push -u origin master
 
 ---
 
-## Step 3: Update Base URL (Important!)
-
-The website is configured to deploy at `https://YOUR_USERNAME.github.io/suntok/`
-
-If your repository name is different from `suntok`, update the base URL in `website/vite.config.ts`:
-
-```typescript
-base: mode === 'production' ? '/YOUR_REPO_NAME/' : '/',
-```
-
----
-
 ## Step 4: Trigger Deployment
 
 The deployment will automatically trigger when you:
-- Push changes to the `master` branch that affect files in the `website/` folder
+- Push changes to the `main` branch
 - Manually trigger the workflow from the Actions tab
 
 ### Manual Trigger:
@@ -82,8 +88,10 @@ The deployment will automatically trigger when you:
 After the workflow completes (usually 1-2 minutes), your website will be available at:
 
 ```
-https://YOUR_USERNAME.github.io/suntok/
+https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/
 ```
+
+For example: `https://YOUR_USERNAME.github.io/suntok-website/`
 
 ---
 
@@ -91,7 +99,7 @@ https://YOUR_USERNAME.github.io/suntok/
 
 The GitHub Actions workflow is located at:
 ```
-.github/workflows/deploy-website.yml
+.github/workflows/deploy.yml
 ```
 
 ---
@@ -99,11 +107,10 @@ The GitHub Actions workflow is located at:
 ## Troubleshooting
 
 ### Build Fails
-- Make sure you have a `package-lock.json` file in the website folder
+- Make sure you have a `package-lock.json` file in the project
 - Run `npm install` locally to generate it, then commit and push
 
 ```bash
-cd website
 npm install
 git add package-lock.json
 git commit -m "Add package-lock.json"
@@ -116,14 +123,17 @@ git push
 - Clear your browser cache or try incognito mode
 
 ### Workflow Not Triggering
-- Make sure you're pushing to the `master` branch
-- Check that changes are in the `website/` folder
+- Make sure you're pushing to the `main` branch
 - You can manually trigger from the Actions tab
+
+### Blank Page After Deployment
+- This is usually a base URL issue
+- Make sure the `base` in `vite.config.ts` matches your repository name exactly
 
 ### Custom Domain (Optional)
 If you want to use a custom domain like `www.suntok.app`:
 
-1. Add a `CNAME` file in `website/public/` with your domain:
+1. Add a `CNAME` file in `public/` folder with your domain:
    ```
    www.suntok.app
    ```
@@ -133,27 +143,21 @@ If you want to use a custom domain like `www.suntok.app`:
    base: '/',
    ```
 
-3. Configure DNS at your domain registrar to point to GitHub Pages
+3. Configure DNS at your domain registrar to point to GitHub Pages:
+   - For apex domain: Add `A` records pointing to GitHub's IPs
+   - For www subdomain: Add `CNAME` record pointing to `YOUR_USERNAME.github.io`
 
----
-
-## Environment Variables
-
-If you need environment variables for production, create a `.env.production` file in the `website/` folder:
-
-```env
-VITE_API_URL=https://your-api.com
-```
-
-⚠️ **Never commit sensitive data!** Add `.env.production` to `.gitignore` if it contains secrets.
+4. In GitHub repo Settings → Pages, enter your custom domain
 
 ---
 
 ## Useful Commands
 
 ```bash
+# Install dependencies
+npm install
+
 # Local development
-cd website
 npm run dev
 
 # Build locally (to test production build)
@@ -170,10 +174,10 @@ npm run preview
 | Step | Action |
 |------|--------|
 | 1 | Push code to GitHub |
-| 2 | Enable GitHub Pages with GitHub Actions source |
-| 3 | Update base URL if repo name differs |
+| 2 | Update base URL in vite.config.ts to match repo name |
+| 3 | Enable GitHub Pages with GitHub Actions source |
 | 4 | Push changes or manually trigger workflow |
-| 5 | Access at `https://USERNAME.github.io/suntok/` |
+| 5 | Access at `https://USERNAME.github.io/REPO_NAME/` |
 
 ---
 
