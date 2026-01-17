@@ -1,0 +1,147 @@
+import { TranslationKeys } from './ro';
+
+export const en: TranslationKeys = {
+  // Header
+  header: {
+    features: 'Features',
+    howItWorks: 'How It Works',
+    testimonials: 'Testimonials',
+    download: 'Download',
+    getTheApp: 'Get the App',
+  },
+
+  // Hero
+  hero: {
+    badge: 'Your daily safety companion',
+    title1: 'Stay Connected.',
+    title2: 'Stay Safe.',
+    description:
+      'SuntOK helps you check in daily with just one tap. If you don\'t check in for 2 days, your emergency contact gets notified automatically.',
+    downloadFree: 'Download Free',
+    seeHowItWorks: 'See How It Works',
+    private: '100% Private',
+    peaceOfMind: 'Peace of Mind',
+    instantAlerts: 'Instant Alerts',
+    checkedIn: '✓ Checked In',
+    emergencyContact: 'Emergency Contact',
+    notifiedInstantly: 'Notified Instantly',
+    appName: 'SuntOK',
+    appSubtitle: 'Daily Safety Check-in',
+    yourName: 'Your Name',
+    userName: 'Maria Johnson',
+    contactName: 'John (Son)',
+    contactPhone: '+1 234 567 890',
+    imOkButton: "I'm OK",
+    lastCheckIn: 'Last check-in: 2 hours ago',
+    reminder: '💡 Check in daily to let your loved ones know you\'re safe!',
+  },
+
+  // Features
+  features: {
+    title1: 'Simple Features,',
+    title2: 'Big Impact',
+    description:
+      'SuntOK is designed to be incredibly simple, so anyone can use it—from tech-savvy millennials to grandparents who just want to stay connected.',
+    oneTapCheckIn: 'One-Tap Check-In',
+    oneTapCheckInDesc:
+      'Simply press the "I\'m OK" button once a day. No complicated steps, no hassle.',
+    automaticAlerts: 'Automatic Alerts',
+    automaticAlertsDesc:
+      'If you don\'t check in for 2 days, your emergency contact receives an SMS notification.',
+    privacyFirst: 'Privacy First',
+    privacyFirstDesc:
+      'Your data stays private. We only contact your emergency person when needed.',
+    dailyReminders: 'Daily Reminders',
+    dailyRemindersDesc:
+      'Get gentle reminders to check in. Never forget to let your loved ones know you\'re safe.',
+    multiLanguage: 'Multi-Language',
+    multiLanguageDesc:
+      'Available in English and Romanian, with more languages coming soon.',
+    peaceOfMind: 'Peace of Mind',
+    peaceOfMindDesc:
+      'Give your family peace of mind knowing they\'ll be notified if something is wrong.',
+  },
+
+  // How It Works
+  howItWorks: {
+    title1: 'How It',
+    title2: 'Works',
+    description:
+      'SuntOK is designed to be as simple as possible. Set it up once, and it takes care of everything else.',
+    step1Title: 'Download the App',
+    step1Desc:
+      'Get SuntOK free from the App Store or Google Play. No account creation required—just open and start.',
+    step2Title: 'Add Emergency Contact',
+    step2Desc:
+      'Enter the phone number of someone you trust. They\'ll be notified if you miss your check-ins.',
+    step3Title: 'Check In Daily',
+    step3Desc:
+      'Once a day, tap the big "I\'m OK" button. That\'s it! Takes less than 2 seconds.',
+    step4Title: 'Stay Safe',
+    step4Desc:
+      'If you don\'t check in for 2 days, your emergency contact gets an automatic SMS alert.',
+    getStarted: 'Get Started Now',
+  },
+
+  // Testimonials
+  testimonials: {
+    title1: 'Loved by',
+    title2: 'Families',
+    description:
+      'Thousands of families trust SuntOK to keep them connected and safe. Here\'s what they have to say.',
+    testimonial1:
+      'SuntOK gives me peace of mind knowing my mom is safe. She loves how simple it is—just one button press each morning with her coffee.',
+    testimonial1Name: 'Elena M.',
+    testimonial1Role: 'Daughter, caring for elderly mother',
+    testimonial2:
+      'My children worried about me living alone. Now they get automatic updates, and I don\'t have to remember to call them every day.',
+    testimonial2Name: 'George P.',
+    testimonial2Role: 'Lives alone, 72 years old',
+    testimonial3:
+      'I travel a lot for work. SuntOK helps my family know I\'m safe without me having to text them constantly. Brilliant app!',
+    testimonial3Name: 'Maria S.',
+    testimonial3Role: 'Working professional',
+    testimonial4:
+      'We set this up for my parents who live in the countryside. The SMS alerts work perfectly, even with their slow internet.',
+    testimonial4Name: 'Ion D.',
+    testimonial4Role: 'Father of two',
+    activeUsers: 'Active Users',
+    uptime: 'Uptime',
+    dailyCheckIns: 'Daily Check-ins',
+    appRating: 'App Rating',
+  },
+
+  // Download
+  download: {
+    badge: '🎉 Available now for free!',
+    title: 'Download SuntOK Today',
+    description:
+      'Join thousands of families who use SuntOK to stay connected and safe. It\'s free, private, and takes just seconds to set up.',
+    appStore: 'App Store',
+    downloadOnThe: 'Download on the',
+    googlePlay: 'Google Play',
+    getItOn: 'Get it on',
+    scanToDownload: 'Scan to download',
+  },
+
+  // Footer
+  footer: {
+    description:
+      'Your daily safety check-in app that keeps you connected with loved ones. Simple, private, and reliable.',
+    quickLinks: 'Quick Links',
+    contact: 'Contact',
+    email: 'support@suntok.app',
+    location: 'Romania, EU',
+    copyright: '© {year} SuntOK. All rights reserved.',
+    privacyPolicy: 'Privacy Policy',
+    termsOfService: 'Terms of Service',
+    madeWith: 'Made with',
+    by: 'by Crisposoft',
+  },
+
+  // Language
+  language: {
+    ro: 'Română',
+    en: 'English',
+  },
+};
