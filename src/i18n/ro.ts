@@ -4,6 +4,7 @@ export const ro = {
     features: 'Funcționalități',
     howItWorks: 'Cum Funcționează',
     testimonials: 'Testimoniale',
+    contact: 'Contact',
     download: 'Descarcă',
     getTheApp: 'Descarcă Aplicația',
   },
@@ -15,7 +16,7 @@ export const ro = {
     title2: 'Rămâi în Siguranță.',
     description:
       'SuntOK te ajută să faci check-in zilnic cu o singură atingere. Dacă nu faci check-in timp de 2 zile, contactul tău de urgență este notificat automat.',
-    downloadFree: 'Descarcă Gratuit',
+    downloadFree: 'Descarcă Acum',
     seeHowItWorks: 'Vezi Cum Funcționează',
     private: '100% Privat',
     peaceOfMind: 'Liniște Sufletească',
@@ -68,7 +69,7 @@ export const ro = {
       'SuntOK este conceput să fie cât mai simplu posibil. Configurează-l o dată, și el se ocupă de restul.',
     step1Title: 'Descarcă Aplicația',
     step1Desc:
-      'Descarcă SuntOK gratuit din App Store sau Google Play. Nu este necesară crearea unui cont—doar deschide și începe.',
+      'Descarcă SuntOK din App Store sau Google Play pentru doar 4,99 RON/an. Nu este necesară crearea unui cont—doar deschide și începe.',
     step2Title: 'Adaugă Contact de Urgență',
     step2Desc:
       'Introdu numărul de telefon al cuiva în care ai încredere. Aceștia vor fi notificați dacă ratezi check-in-urile.',
@@ -111,10 +112,10 @@ export const ro = {
 
   // Download
   download: {
-    badge: '🎉 Disponibil acum gratuit!',
+    badge: '🎉 Disponibil acum pentru doar 4,99 RON/an!',
     title: 'Descarcă SuntOK Astăzi',
     description:
-      'Alătură-te miilor de familii care folosesc SuntOK pentru a rămâne conectate și în siguranță. Este gratuit, privat și durează doar câteva secunde să îl configurezi.',
+      'Alătură-te miilor de familii care folosesc SuntOK pentru a rămâne conectate și în siguranță. Doar 4,99 RON/an, privat și durează doar câteva secunde să îl configurezi.',
     appStore: 'App Store',
     downloadOnThe: 'Descarcă de pe',
     googlePlay: 'Google Play',
@@ -135,6 +136,43 @@ export const ro = {
     termsOfService: 'Termeni și Condiții',
     madeWith: 'Făcut cu',
     by: 'de Crisposoft',
+  },
+
+  // Contact Page
+  contactPage: {
+    title: 'Contactează-ne',
+    subtitle: 'Suntem aici să te ajutăm',
+    description: 'Ai întrebări despre SuntOK? Ne-ar face plăcere să auzim de la tine. Completează formularul de mai jos sau trimite-ne un email direct.',
+    backToHome: 'Înapoi la pagina principală',
+    form: {
+      name: 'Numele tău',
+      namePlaceholder: 'Introdu numele tău',
+      email: 'Adresa de email',
+      emailPlaceholder: 'exemplu@email.com',
+      subject: 'Subiect',
+      subjectPlaceholder: 'Cu ce te putem ajuta?',
+      message: 'Mesaj',
+      messagePlaceholder: 'Scrie mesajul tău aici...',
+      send: 'Trimite Mesajul',
+    },
+    contactInfo: {
+      title: 'Informații de Contact',
+      email: 'Email',
+      location: 'Locație',
+      locationValue: 'România, Uniunea Europeană',
+      hours: 'Program Răspuns',
+      hoursValue: 'Răspundem în 24-48 ore',
+    },
+    faq: {
+      title: 'Întrebări Frecvente',
+      q1: 'Cât costă aplicația?',
+      a1: 'SuntOK costă doar 4,99 RON pe an - mai puțin de 0,50 RON pe lună pentru liniștea ta sufletească.',
+      q2: 'Cum îmi protejați datele?',
+      a2: 'Folosim criptare și nu colectăm date de localizare. Citește Politica noastră de Confidențialitate pentru detalii.',
+      q3: 'Pe ce dispozitive funcționează?',
+      a3: 'SuntOK este disponibil pe iOS și Android.',
+    },
+    allRightsReserved: 'Toate drepturile rezervate.',
   },
 
   // Language

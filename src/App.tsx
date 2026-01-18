@@ -9,10 +9,11 @@ import Download from './components/Download';
 import Footer from './components/Footer';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import Contact from './pages/Contact';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [currentPage, setCurrentPage] = useState<'home' | 'privacy' | 'terms'>('home');
+  const [currentPage, setCurrentPage] = useState<'home' | 'privacy' | 'terms' | 'contact'>('home');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,6 +34,9 @@ function App() {
       } else if (hash === '#/terms-of-service') {
         setCurrentPage('terms');
         window.scrollTo(0, 0);
+      } else if (hash === '#/contact') {
+        setCurrentPage('contact');
+        window.scrollTo(0, 0);
       } else {
         setCurrentPage('home');
       }
@@ -49,6 +53,8 @@ function App() {
         <PrivacyPolicy />
       ) : currentPage === 'terms' ? (
         <TermsOfService />
+      ) : currentPage === 'contact' ? (
+        <Contact />
       ) : (
         <div className="min-h-screen bg-white">
           <Header isScrolled={isScrolled} />

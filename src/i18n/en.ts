@@ -6,6 +6,7 @@ export const en: TranslationKeys = {
     features: 'Features',
     howItWorks: 'How It Works',
     testimonials: 'Testimonials',
+    contact: 'Contact',
     download: 'Download',
     getTheApp: 'Get the App',
   },
@@ -17,7 +18,7 @@ export const en: TranslationKeys = {
     title2: 'Stay Safe.',
     description:
       'SuntOK helps you check in daily with just one tap. If you don\'t check in for 2 days, your emergency contact gets notified automatically.',
-    downloadFree: 'Download Free',
+    downloadFree: 'Download Now',
     seeHowItWorks: 'See How It Works',
     private: '100% Private',
     peaceOfMind: 'Peace of Mind',
@@ -70,7 +71,7 @@ export const en: TranslationKeys = {
       'SuntOK is designed to be as simple as possible. Set it up once, and it takes care of everything else.',
     step1Title: 'Download the App',
     step1Desc:
-      'Get SuntOK free from the App Store or Google Play. No account creation required—just open and start.',
+      'Get SuntOK from the App Store or Google Play for just 4.99 RON/year. No account creation required—just open and start.',
     step2Title: 'Add Emergency Contact',
     step2Desc:
       'Enter the phone number of someone you trust. They\'ll be notified if you miss your check-ins.',
@@ -113,10 +114,10 @@ export const en: TranslationKeys = {
 
   // Download
   download: {
-    badge: '🎉 Available now for free!',
+    badge: '🎉 Available now for just 4.99 RON/year!',
     title: 'Download SuntOK Today',
     description:
-      'Join thousands of families who use SuntOK to stay connected and safe. It\'s free, private, and takes just seconds to set up.',
+      'Join thousands of families who use SuntOK to stay connected and safe. Only 4.99 RON/year, private, and takes just seconds to set up.',
     appStore: 'App Store',
     downloadOnThe: 'Download on the',
     googlePlay: 'Google Play',
@@ -137,6 +138,43 @@ export const en: TranslationKeys = {
     termsOfService: 'Terms of Service',
     madeWith: 'Made with',
     by: 'by Crisposoft',
+  },
+
+  // Contact Page
+  contactPage: {
+    title: 'Contact Us',
+    subtitle: 'We\'re here to help',
+    description: 'Have questions about SuntOK? We\'d love to hear from you. Fill out the form below or send us an email directly.',
+    backToHome: 'Back to Home',
+    form: {
+      name: 'Your Name',
+      namePlaceholder: 'Enter your name',
+      email: 'Email Address',
+      emailPlaceholder: 'example@email.com',
+      subject: 'Subject',
+      subjectPlaceholder: 'How can we help you?',
+      message: 'Message',
+      messagePlaceholder: 'Write your message here...',
+      send: 'Send Message',
+    },
+    contactInfo: {
+      title: 'Contact Information',
+      email: 'Email',
+      location: 'Location',
+      locationValue: 'Romania, European Union',
+      hours: 'Response Time',
+      hoursValue: 'We respond within 24-48 hours',
+    },
+    faq: {
+      title: 'Frequently Asked Questions',
+      q1: 'How much does the app cost?',
+      a1: 'SuntOK costs only 4.99 RON per year - less than 0.50 RON per month for your peace of mind.',
+      q2: 'How do you protect my data?',
+      a2: 'We use encryption and don\'t collect location data. Read our Privacy Policy for details.',
+      q3: 'What devices does it work on?',
+      a3: 'SuntOK is available on both iOS and Android.',
+    },
+    allRightsReserved: 'All rights reserved.',
   },
 
   // Language
