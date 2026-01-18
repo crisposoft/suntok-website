@@ -191,10 +191,6 @@ const Contact = () => {
                   <p className="font-medium text-gray-900">{t.contactPage.faq.q2}</p>
                   <p className="text-sm text-gray-600 mt-1">{t.contactPage.faq.a2}</p>
                 </div>
-                <div className="border-t border-gray-100 pt-4">
-                  <p className="font-medium text-gray-900">{t.contactPage.faq.q3}</p>
-                  <p className="text-sm text-gray-600 mt-1">{t.contactPage.faq.a3}</p>
-                </div>
               </div>
             </div>
           </div>
