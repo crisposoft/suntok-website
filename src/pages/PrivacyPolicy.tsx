@@ -96,7 +96,7 @@ Puteți solicita ștergerea datelor dumneavoastră în orice moment contactându
 • Dreptul de a Vă Opune: Puteți să vă opuneți anumitor tipuri de prelucrare
 • Dreptul de a Vă Retrage Consimțământul: Când prelucrarea se bazează pe consimțământ
 
-Pentru a vă exercita oricare dintre aceste drepturi, vă rugăm să ne contactați la suport@suntok.app.`
+Pentru a vă exercita oricare dintre aceste drepturi, vă rugăm să ne contactați la crisposoft@gmail.com.`
       },
       {
         title: '8. Confidențialitatea Copiilor',
@@ -119,7 +119,7 @@ Continuarea utilizării Aplicației după postarea oricăror modificări constit
         content: `Dacă aveți întrebări despre această Politică de Confidențialitate sau practicile noastre privind datele, vă rugăm să ne contactați la:
 
 SuntOK
-Email: suport@suntok.app
+Email: crisposoft@gmail.com
 Locație: România, Uniunea Europeană
 
 Pentru plângeri legate de protecția datelor, aveți și dreptul de a depune o plângere la autoritatea locală de supraveghere a protecției datelor (ANSPDCP în România).`
@@ -217,7 +217,7 @@ You may request deletion of your data at any time by contacting us at the email 
 • Right to Object: You can object to certain types of processing
 • Right to Withdraw Consent: Where processing is based on consent
 
-To exercise any of these rights, please contact us at support@suntok.app.`
+To exercise any of these rights, please contact us at crisposoft@gmail.com.`
       },
       {
         title: '8. Children\'s Privacy',
@@ -240,7 +240,7 @@ Your continued use of the App after the posting of any changes constitutes accep
         content: `If you have any questions about this Privacy Policy or our data practices, please contact us at:
 
 SuntOK
-Email: support@suntok.app
+Email: crisposoft@gmail.com
 Location: Romania, European Union
 
 For data protection complaints, you also have the right to lodge a complaint with your local data protection supervisory authority (ANSPDCP in Romania).`

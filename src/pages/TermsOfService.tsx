@@ -166,7 +166,7 @@ e) Forță Majoră: Nu vom fi răspunzători pentru niciun eșec sau întârzier
         content: `Dacă aveți întrebări despre acești Termeni și Condiții, vă rugăm să ne contactați la:
 
 SuntOK
-Email: suport@suntok.app
+Email: crisposoft@gmail.com
 Locație: România, Uniunea Europeană
 
 Prin utilizarea Aplicației SuntOK, confirmați că ați citit, înțeles și sunteți de acord să fiți obligat de acești Termeni și Condiții.`
@@ -334,7 +334,7 @@ e) Force Majeure: We shall not be liable for any failure or delay in performing 
         content: `If you have any questions about these Terms of Service, please contact us at:
 
 SuntOK
-Email: support@suntok.app
+Email: crisposoft@gmail.com
 Location: Romania, European Union
 
 By using the SuntOK App, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.`

@@ -130,7 +130,7 @@ export const en: TranslationKeys = {
       'Your daily safety check-in app that keeps you connected with loved ones. Simple, private, and reliable.',
     quickLinks: 'Quick Links',
     contact: 'Contact',
-    email: 'support@suntok.app',
+    email: 'crisposoft@gmail.com',
     location: 'Romania, EU',
     copyright: '© {year} SuntOK. All rights reserved.',
     privacyPolicy: 'Privacy Policy',

@@ -128,7 +128,7 @@ export const ro = {
       'Aplicația ta zilnică de check-in pentru siguranță care te ține conectat cu cei dragi. Simplă, privată și de încredere.',
     quickLinks: 'Linkuri Rapide',
     contact: 'Contact',
-    email: 'suport@suntok.app',
+    email: 'crisposoft@gmail.com',
     location: 'România, UE',
     copyright: '© {year} SuntOK. Toate drepturile rezervate.',
     privacyPolicy: 'Politica de Confidențialitate',
