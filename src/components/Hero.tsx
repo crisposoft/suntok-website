@@ -67,7 +67,7 @@ const Hero = () => {
 
           {/* Right Content - Phone Mockup */}
           <div className="relative flex justify-center lg:justify-end">
-            <div className="relative animate-float">
+            <div className="relative">
               {/* Phone Frame */}
               <div className="relative w-[280px] sm:w-[320px] h-[580px] sm:h-[640px] bg-gray-900 rounded-[3rem] p-3 shadow-2xl">
                 {/* Phone Screen */}
@@ -114,15 +114,6 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-
-              {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                {t.hero.checkedIn}
-              </div>
-              <div className="absolute -bottom-4 -left-4 bg-white px-4 py-3 rounded-2xl shadow-xl border border-gray-100">
-                <p className="text-xs text-gray-500">{t.hero.emergencyContact}</p>
-                <p className="text-sm font-semibold text-gray-800">{t.hero.notifiedInstantly}</p>
               </div>
             </div>
           </div>
