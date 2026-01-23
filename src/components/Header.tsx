@@ -15,6 +15,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
     { label: t.header.features, href: '#features' },
     { label: t.header.howItWorks, href: '#how-it-works' },
     { label: t.header.testimonials, href: '#testimonials' },
+    { label: t.header.pricing, href: '#/pricing' },
     { label: t.header.contact, href: '#/contact' },
     { label: t.header.download, href: '#download' },
   ];
