@@ -36,6 +36,19 @@ export const en: TranslationKeys = {
     imOkButton: "I'm OK",
     lastCheckIn: 'Last check-in: 2 hours ago',
     reminder: '💡 Check in daily to let your loved ones know you\'re safe!',
+    mockup: {
+      yourInfo: 'Your Info',
+      setupRequired: 'Setup required',
+      emergencyContact: 'Emergency Contact',
+      suntOkButton: 'Sunt OK',
+      noCheckIn: 'No check-in yet',
+      timeRemaining: 'Time remaining',
+      lastCheckIn: 'Last check-in: No check-in yet',
+      checkInFrequency: 'Check-in Frequency',
+      twoDays: '2 days',
+      emergencyMessage: 'Emergency Message',
+      defaultMessage: 'Default message',
+    },
   },
 
   // Features

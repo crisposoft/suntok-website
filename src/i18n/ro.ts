@@ -34,6 +34,19 @@ export const ro = {
     imOkButton: 'Sunt OK',
     lastCheckIn: 'Ultimul check-in: acum 2 ore',
     reminder: '💡 Fă check-in zilnic pentru a le spune celor dragi că ești în siguranță!',
+    mockup: {
+      yourInfo: 'Informațiile Tale',
+      setupRequired: 'Configurare necesară',
+      emergencyContact: 'Contact de Urgență',
+      suntOkButton: 'Sunt OK',
+      noCheckIn: 'Niciun check-in efectuat',
+      timeRemaining: 'Timp rămas',
+      lastCheckIn: 'Ultimul check-in: Niciun check-in efectuat',
+      checkInFrequency: 'Frecvența Check-in',
+      twoDays: '2 zile',
+      emergencyMessage: 'Mesaj de Urgență',
+      defaultMessage: 'Mesaj implicit',
+    },
   },
 
   // Features

@@ -1,4 +1,4 @@
-import { ArrowRight, Shield, Heart, Bell } from 'lucide-react';
+import { ArrowRight, Shield, Heart, Bell, User, Users, Clock, MessageSquare, Settings, Crown, Check } from 'lucide-react';
 import { useLanguage } from '../i18n/index';
 
 const Hero = () => {
@@ -71,46 +71,112 @@ const Hero = () => {
               {/* Phone Frame */}
               <div className="relative w-[280px] sm:w-[320px] h-[580px] sm:h-[640px] bg-gray-900 rounded-[3rem] p-3 shadow-2xl">
                 {/* Phone Screen */}
-                <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden relative">
+                <div className="w-full h-full bg-gray-100 rounded-[2.5rem] overflow-hidden relative">
                   {/* Status Bar */}
-                  <div className="absolute top-0 left-0 right-0 h-12 bg-white flex items-center justify-center">
-                    <div className="w-20 h-6 bg-gray-900 rounded-full" />
+                  <div className="absolute top-0 left-0 right-0 h-8 bg-gray-100 flex items-center justify-center z-10">
+                    <div className="w-20 h-5 bg-gray-900 rounded-full" />
                   </div>
 
                   {/* App Content */}
-                  <div className="pt-16 px-6 pb-6 h-full flex flex-col">
-                    {/* Header */}
-                    <div className="text-center mb-8">
-                      <h2 className="text-3xl font-bold text-primary-500 mb-1">{t.hero.appName}</h2>
-                      <p className="text-gray-500 text-sm">{t.hero.appSubtitle}</p>
+                  <div className="pt-10 px-4 pb-4 h-full flex flex-col overflow-hidden">
+                    {/* App Header */}
+                    <div className="flex items-center justify-between mb-4">
+                      <h2 className="text-2xl font-bold text-primary-500">{t.hero.appName}</h2>
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
+                          <Crown size={16} className="text-primary-500" />
+                        </div>
+                        <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
+                          <Settings size={16} className="text-gray-600" />
+                        </div>
+                      </div>
                     </div>
 
-                    {/* User Info */}
-                    <div className="bg-gray-50 rounded-2xl p-4 mb-4">
-                      <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">{t.hero.yourName}</p>
-                      <p className="text-gray-800 font-medium">{t.hero.userName}</p>
+                    {/* Your Info Card */}
+                    <div className="bg-amber-50 rounded-2xl p-3 mb-2 flex items-center justify-between border border-amber-100">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                          <User size={16} className="text-primary-500" />
+                        </div>
+                        <div>
+                          <p className="text-gray-800 font-medium text-sm">{t.hero.mockup.yourInfo}</p>
+                          <p className="text-primary-500 text-xs">{t.hero.mockup.setupRequired}</p>
+                        </div>
+                      </div>
+                      <span className="text-gray-400">›</span>
                     </div>
 
-                    {/* Emergency Contact */}
-                    <div className="bg-gray-50 rounded-2xl p-4 mb-6">
-                      <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">{t.hero.emergencyContact}</p>
-                      <p className="text-gray-800 font-medium">{t.hero.contactName}</p>
-                      <p className="text-gray-500 text-sm">{t.hero.contactPhone}</p>
+                    {/* Emergency Contact Card */}
+                    <div className="bg-amber-50 rounded-2xl p-3 mb-4 flex items-center justify-between border border-amber-100">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                          <Users size={16} className="text-primary-500" />
+                        </div>
+                        <div>
+                          <p className="text-gray-800 font-medium text-sm">{t.hero.mockup.emergencyContact}</p>
+                          <p className="text-primary-500 text-xs">{t.hero.mockup.setupRequired}</p>
+                        </div>
+                      </div>
+                      <span className="text-gray-400">›</span>
                     </div>
 
                     {/* Check-in Button */}
-                    <div className="flex-1 flex flex-col items-center justify-center">
-                      <button className="w-40 h-40 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center shadow-xl shadow-primary-500/40 hover:scale-105 transition-transform">
-                        <span className="text-white text-2xl font-bold">{t.hero.imOkButton}</span>
-                      </button>
-                      <p className="text-gray-500 text-sm mt-4">{t.hero.lastCheckIn}</p>
+                    <div className="flex-1 flex flex-col items-center justify-center -mt-2">
+                      <div className="relative">
+                        <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full border-4 border-gray-200 flex items-center justify-center">
+                          <div className="w-28 h-28 sm:w-32 sm:h-32 bg-primary-500 rounded-full flex flex-col items-center justify-center shadow-lg">
+                            <Check size={32} className="text-white mb-1" strokeWidth={3} />
+                            <span className="text-white text-base sm:text-lg font-bold">{t.hero.mockup.suntOkButton}</span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Status */}
+                      <div className="text-center mt-3">
+                        <div className="flex items-center justify-center gap-1 text-primary-500 mb-1">
+                          <Clock size={14} />
+                          <span className="text-sm font-medium">{t.hero.mockup.noCheckIn}</span>
+                        </div>
+                        <p className="text-gray-500 text-xs">{t.hero.mockup.timeRemaining}: <span className="text-primary-500 font-medium">2d</span></p>
+                        <p className="text-gray-400 text-xs">{t.hero.mockup.lastCheckIn}</p>
+                      </div>
                     </div>
 
-                    {/* Reminder */}
-                    <div className="bg-primary-50 rounded-2xl p-3 mt-4">
-                      <p className="text-primary-700 text-xs text-center">
-                        {t.hero.reminder}
-                      </p>
+                    {/* Bottom Options */}
+                    <div className="space-y-2 mt-2">
+                      {/* Check-in Frequency */}
+                      <div className="bg-white rounded-xl p-3 flex items-center justify-between shadow-sm">
+                        <div className="flex items-center gap-3">
+                          <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <Clock size={16} className="text-purple-500" />
+                          </div>
+                          <div>
+                            <p className="text-gray-800 font-medium text-xs">{t.hero.mockup.checkInFrequency}</p>
+                            <p className="text-gray-500 text-xs">{t.hero.mockup.twoDays}</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Crown size={12} className="text-primary-500" />
+                          <span className="text-gray-400">›</span>
+                        </div>
+                      </div>
+
+                      {/* Emergency Message */}
+                      <div className="bg-white rounded-xl p-3 flex items-center justify-between shadow-sm">
+                        <div className="flex items-center gap-3">
+                          <div className="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center">
+                            <MessageSquare size={16} className="text-primary-500" />
+                          </div>
+                          <div>
+                            <p className="text-gray-800 font-medium text-xs">{t.hero.mockup.emergencyMessage}</p>
+                            <p className="text-gray-500 text-xs">{t.hero.mockup.defaultMessage}</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Crown size={12} className="text-primary-500" />
+                          <span className="text-gray-400">›</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
