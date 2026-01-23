@@ -14,16 +14,12 @@ export const en: TranslationKeys = {
 
   // Hero
   hero: {
-    badge: 'Your daily safety companion',
     title1: 'Stay Connected.',
     title2: 'Stay Safe.',
     description:
       'SuntOK helps you check in daily with just one tap. If you don\'t check in for 2 days, your emergency contact gets notified automatically.',
     downloadFree: 'Download Now',
     seeHowItWorks: 'See How It Works',
-    private: '100% Private',
-    peaceOfMind: 'Peace of Mind',
-    instantAlerts: 'Instant Alerts',
     checkedIn: '✓ Checked In',
     emergencyContact: 'Emergency Contact',
     notifiedInstantly: 'Notified Instantly',
@@ -85,7 +81,7 @@ export const en: TranslationKeys = {
       'SuntOK is designed to be as simple as possible. Set it up once, and it takes care of everything else.',
     step1Title: 'Download the App',
     step1Desc:
-      'Get SuntOK from the App Store or Google Play for just 4.99 RON/year. No account creation required—just open and start.',
+      'Get SuntOK free from the App Store or Google Play. No account creation required—just open and start.',
     step2Title: 'Add Emergency Contact',
     step2Desc:
       'Enter the phone number of someone you trust. They\'ll be notified if you miss your check-ins.',
@@ -128,10 +124,10 @@ export const en: TranslationKeys = {
 
   // Download
   download: {
-    badge: '🎉 Available now for just 4.99 RON/year!',
+    badge: '🎉 Free for basic use!',
     title: 'Download SuntOK Today',
     description:
-      'Join thousands of families who use SuntOK to stay connected and safe. Only 4.99 RON/year, private, and takes just seconds to set up.',
+      'Join thousands of families who use SuntOK to stay connected and safe. Free, private, and takes just seconds to set up.',
     appStore: 'App Store',
     downloadOnThe: 'Download on the',
     googlePlay: 'Google Play',

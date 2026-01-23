@@ -1,4 +1,4 @@
-import { ArrowRight, Shield, Heart, Bell, User, Users, Clock, MessageSquare, Settings, Crown, Check } from 'lucide-react';
+import { ArrowRight, User, Users, Clock, MessageSquare, Settings, Crown, Check } from 'lucide-react';
 import { useLanguage } from '../i18n/index';
 
 const Hero = () => {
@@ -17,11 +17,6 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <Shield size={16} />
-              <span>{t.hero.badge}</span>
-            </div>
-
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
               {t.hero.title1}
               <br />
@@ -32,7 +27,7 @@ const Hero = () => {
               {t.hero.description}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href="#download"
                 className="group inline-flex items-center justify-center gap-2 bg-primary-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-600 transition-all shadow-xl shadow-primary-500/30 hover:shadow-primary-500/40 hover:scale-105"
@@ -46,22 +41,6 @@ const Hero = () => {
               >
                 {t.hero.seeHowItWorks}
               </a>
-            </div>
-
-            {/* Trust indicators */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-8 text-gray-500">
-              <div className="flex items-center gap-2">
-                <Shield className="text-green-500" size={20} />
-                <span className="text-sm font-medium">{t.hero.private}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Heart className="text-red-500" size={20} />
-                <span className="text-sm font-medium">{t.hero.peaceOfMind}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Bell className="text-primary-500" size={20} />
-                <span className="text-sm font-medium">{t.hero.instantAlerts}</span>
-              </div>
             </div>
           </div>
 
