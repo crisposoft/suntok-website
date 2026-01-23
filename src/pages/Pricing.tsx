@@ -1,8 +1,10 @@
 import { useLanguage } from '../i18n/index';
 import { ArrowLeft, Check, X, Crown, Zap } from 'lucide-react';
+import { useState } from 'react';
 
 const Pricing = () => {
   const { t } = useLanguage();
+  const [isYearly, setIsYearly] = useState(true);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -31,6 +33,33 @@ const Pricing = () => {
 
       {/* Pricing Cards */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Billing Toggle */}
+        <div className="flex items-center justify-center gap-4 mb-10">
+          <span className={`font-medium transition-colors ${!isYearly ? 'text-gray-900' : 'text-gray-400'}`}>
+            {t.pricingPage.monthly}
+          </span>
+          <button
+            onClick={() => setIsYearly(!isYearly)}
+            className={`relative w-16 h-8 rounded-full transition-colors ${
+              isYearly ? 'bg-primary-500' : 'bg-gray-300'
+            }`}
+          >
+            <div
+              className={`absolute top-1 w-6 h-6 bg-white rounded-full shadow-md transition-transform ${
+                isYearly ? 'translate-x-9' : 'translate-x-1'
+              }`}
+            />
+          </button>
+          <div className="flex items-center gap-2">
+            <span className={`font-medium transition-colors ${isYearly ? 'text-gray-900' : 'text-gray-400'}`}>
+              {t.pricingPage.yearly}
+            </span>
+            <span className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full">
+              {t.pricingPage.savePercent}
+            </span>
+          </div>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-8">
           {/* Free Plan */}
           <div className="bg-white rounded-3xl shadow-sm border border-gray-200 p-8 relative">
@@ -111,8 +140,17 @@ const Pricing = () => {
               </div>
               
               <div className="mb-6">
-                <span className="text-4xl font-bold text-white">{t.pricingPage.premium.price}</span>
-                <span className="text-white/70 ml-2">{t.pricingPage.premium.period}</span>
+                <span className="text-4xl font-bold text-white">
+                  {isYearly ? t.pricingPage.premium.priceYearly : t.pricingPage.premium.priceMonthly}
+                </span>
+                <span className="text-white/70 ml-2">
+                  {isYearly ? t.pricingPage.premium.periodYearly : t.pricingPage.premium.periodMonthly}
+                </span>
+                {isYearly && (
+                  <div className="text-white/60 text-sm mt-1">
+                    {t.pricingPage.premium.yearlyNote}
+                  </div>
+                )}
               </div>
 
               <ul className="space-y-4 mb-8">
