@@ -6,7 +6,7 @@ const TermsOfService = () => {
 
   const content = language === 'ro' ? {
     title: 'Termeni și Condiții',
-    lastUpdated: 'Ultima actualizare: 17 Ianuarie 2026',
+    lastUpdated: 'Ultima actualizare: 27 Ianuarie 2026',
     sections: [
       {
         title: '1. Acceptarea Termenilor',
@@ -29,7 +29,72 @@ IMPORTANT: SuntOK NU este un serviciu de urgență. Aplicația este concepută c
 În caz de urgență medicală sau de siguranță, sunați întotdeauna serviciile de urgență imediat.`
       },
       {
-        title: '3. Eligibilitate',
+        title: '3. Versiuni Gratuite și Premium',
+        content: `SuntOK oferă atât o versiune gratuită cât și o versiune premium (SuntOK Premium):
+
+a) Versiunea Gratuită include:
+• Check-in de bază pentru siguranță
+• Un contact de urgență
+• Frecvență fixă de check-in (2 zile)
+• Notificări standard
+
+b) Versiunea Premium (abonament) include toate funcțiile gratuite plus:
+• Frecvențe personalizate de check-in (1-30 zile)
+• Contacte de urgență multiple
+• Mesaje de urgență personalizate
+• Notificări prioritare
+• Experiență fără reclame
+• Suport prioritar`
+      },
+      {
+        title: '4. Achiziții În Aplicație și Abonamente',
+        content: `a) Abonamente Disponibile:
+SuntOK Premium este disponibil prin următoarele opțiuni de abonament:
+• Abonament Lunar: 4,99 RON/lună
+• Abonament Anual: 49,99 RON/an (economisiți ~17%)
+
+b) Procesarea Plăților:
+• Toate plățile pentru abonamentele SuntOK Premium sunt procesate prin Apple App Store (pentru iOS) sau Google Play Store (pentru Android)
+• Nu procesăm și nu stocăm informațiile dumneavoastră de plată direct
+• Plata va fi debitată din contul Apple ID sau Google Play la confirmarea achiziției
+• Toate prețurile includ taxele aplicabile conform locației dumneavoastră
+
+c) Reînnoirea Abonamentului:
+• Abonamentele se reînnoiesc automat la sfârșitul fiecărei perioade de facturare
+• Contul dumneavoastră va fi debitat pentru reînnoire în termen de 24 de ore înainte de sfârșitul perioadei curente
+• Puteți gestiona și anula abonamentele accesând setările contului dumneavoastră din App Store sau Google Play Store
+
+d) Anulare:
+• Puteți anula abonamentul în orice moment prin setările contului App Store sau Google Play Store
+• Anularea intră în vigoare la sfârșitul perioadei curente de facturare
+• Nu se acordă rambursări pentru perioadele parțiale de abonament
+• După anulare, veți avea în continuare acces la funcțiile premium până la sfârșitul perioadei plătite
+
+e) Modificări de Preț:
+• Ne rezervăm dreptul de a modifica prețurile abonamentelor
+• Veți fi notificat în avans despre orice modificări de preț
+• Continuarea abonamentului după modificarea prețului constituie acceptarea noului preț`
+      },
+      {
+        title: '5. Politica de Rambursare',
+        content: `Toate achizițiile sunt procesate prin Apple App Store sau Google Play Store și sunt supuse politicilor lor de rambursare:
+
+• Pentru iOS: Solicitările de rambursare trebuie făcute direct la Apple prin pagina lor "Raportează o problemă" sau contactând suportul Apple
+• Pentru Android: Solicitările de rambursare trebuie făcute direct prin Google Play Store sau contactând suportul Google
+
+Nu procesăm rambursări direct. Toate solicitările de rambursare sunt la discreția Apple sau Google conform propriilor lor politici.`
+      },
+      {
+        title: '6. Perioade de Încercare Gratuite',
+        content: `Putem oferi periodic perioade de încercare gratuită pentru SuntOK Premium:
+
+• Perioadele de încercare gratuită oferă acces complet la funcțiile premium
+• La sfârșitul perioadei de încercare, abonamentul se va converti automat într-un abonament plătit, cu excepția cazului în care îl anulați înainte de expirarea perioadei de încercare
+• Anulați prin setările contului App Store sau Google Play Store pentru a evita debitarea
+• Orice porțiune nefolosită a unei perioade de încercare gratuită va fi pierdută atunci când achiziționați un abonament`
+      },
+      {
+        title: '7. Eligibilitate',
         content: `Pentru a utiliza Aplicația, trebuie să:
 
 • Aveți cel puțin 16 ani
@@ -39,7 +104,7 @@ IMPORTANT: SuntOK NU este un serviciu de urgență. Aplicația este concepută c
 Prin utilizarea Aplicației, declarați și garantați că îndepliniți toate cerințele de eligibilitate. Dacă utilizați Aplicația în numele unei alte persoane (cum ar fi un părinte în vârstă), declarați că aveți autoritatea legală de a o face și că persoana respectivă a consimțit.`
       },
       {
-        title: '4. Contul Utilizatorului',
+        title: '8. Contul Utilizatorului',
         content: `a) Crearea Contului: Aplicația utilizează autentificare anonimă. Nu este necesar să creați un cont cu email sau parolă.
 
 b) Securitatea Contului: Sunteți responsabil pentru menținerea securității dispozitivului dumneavoastră și a accesului la Aplicație. Nu suntem răspunzători pentru nicio pierdere care rezultă din accesul neautorizat la contul sau dispozitivul dumneavoastră.
@@ -47,7 +112,7 @@ b) Securitatea Contului: Sunteți responsabil pentru menținerea securității d
 c) Acuratețea Informațiilor: Sunteți de acord să furnizați informații exacte și actuale, în special numărul de telefon al contactului de urgență. Informațiile inexacte pot duce la eșecul notificărilor.`
       },
       {
-        title: '5. Utilizare Acceptabilă',
+        title: '9. Utilizare Acceptabilă',
         content: `Sunteți de acord să utilizați Aplicația doar în scopuri legale și în conformitate cu acești Termeni. Sunteți de acord să NU:
 
 • Utilizați Aplicația în scopuri ilegale sau neautorizate
@@ -63,8 +128,8 @@ c) Acuratețea Informațiilor: Sunteți de acord să furnizați informații exac
 Ne rezervăm dreptul de a vă suspenda sau încheia accesul la Aplicație pentru încălcarea acestor termeni.`
       },
       {
-        title: '6. Serviciul de Notificare de Urgență',
-        content: `a) Funcționare: Dacă nu efectuați check-in în Aplicație timp de 48 de ore consecutive, vom trimite o notificare SMS către contactul dumneavoastră de urgență desemnat.
+        title: '10. Serviciul de Notificare de Urgență',
+        content: `a) Funcționare: Dacă nu efectuați check-in în Aplicație în intervalul configurat, vom trimite o notificare SMS către contactul dumneavoastră de urgență desemnat.
 
 b) Limitări: Înțelegeți și sunteți de acord că:
 • Notificările SMS depind de rețelele de telecomunicații și pot fi întârziate sau eșua
@@ -76,7 +141,7 @@ b) Limitări: Înțelegeți și sunteți de acord că:
 c) Consimțământul Contactului de Urgență: Prin desemnarea unui contact de urgență, declarați că ați obținut consimțământul acestuia pentru a primi notificări SMS în numele dumneavoastră.`
       },
       {
-        title: '7. Drepturi de Proprietate Intelectuală',
+        title: '11. Drepturi de Proprietate Intelectuală',
         content: `a) Proprietatea Noastră: Aplicația, inclusiv tot conținutul, caracteristicile și funcționalitățile sale (inclusiv, dar fără a se limita la, informații, software, text, afișaje, imagini, video, audio și designul acestora) este deținută de Companie, licențiatorii săi sau alți furnizori de astfel de materiale și este protejată de legile drepturilor de autor, mărcilor comerciale, brevetelor, secretelor comerciale și alte legi de proprietate intelectuală.
 
 b) Licență Limitată: Vă acordăm o licență limitată, neexclusivă, netransferabilă și revocabilă pentru a descărca, instala și utiliza Aplicația pentru uz personal, necomercial, supusă acestor Termeni.
@@ -88,7 +153,39 @@ c) Restricții: Nu puteți:
 • Utiliza Aplicația pentru a crea un produs sau serviciu concurent`
       },
       {
-        title: '8. Declinarea Garanțiilor',
+        title: '12. Acordul Apple și Recunoașteri',
+        content: `Această secțiune se aplică pentru utilizatorii care descarcă Aplicația din Apple App Store:
+
+a) Recunoaștere: Recunoașteți că acești Termeni sunt încheiate între dumneavoastră și SuntOK, nu cu Apple Inc. ("Apple"). SuntOK, nu Apple, este singura responsabilă pentru Aplicație și conținutul acesteia.
+
+b) Licență: Licența acordată pentru Aplicație este limitată la o licență netransferabilă de utilizare a Aplicației pe orice dispozitiv Apple deținut sau controlat de dumneavoastră, conform Regulilor de Utilizare din Termenii de Serviciu ai Apple App Store.
+
+c) Întreținere și Suport: SuntOK este singura responsabilă pentru furnizarea oricăror servicii de întreținere și suport pentru Aplicație. Recunoașteți că Apple nu are nicio obligație de a furniza servicii de întreținere și suport pentru Aplicație.
+
+d) Garanție: În cazul în care Aplicația nu respectă orice garanție aplicabilă, puteți notifica Apple, iar Apple vă va rambursa prețul de achiziție al Aplicației, dacă este cazul. În măsura maximă permisă de legea aplicabilă, Apple nu va avea nicio altă obligație de garanție pentru Aplicație.
+
+e) Revendicări de Produs: SuntOK, nu Apple, este responsabilă pentru abordarea oricăror revendicări ale dumneavoastră sau ale unui terț legate de Aplicație sau de posesia și/sau utilizarea Aplicației de către dumneavoastră.
+
+f) Proprietate Intelectuală: În cazul oricărei revendicări de către un terț că Aplicația sau posesia și utilizarea Aplicației de către dumneavoastră încalcă drepturile de proprietate intelectuală ale acelui terț, SuntOK, nu Apple, va fi singura responsabilă pentru investigarea, apărarea, soluționarea și descărcarea oricărei astfel de revendicări.
+
+g) Conformitate Legală: Declarați și garantați că (i) nu vă aflați într-o țară supusă embargoului guvernului SUA sau care a fost desemnată de guvernul SUA drept țară "care susține terorismul"; și (ii) nu sunteți pe nicio listă a guvernului SUA cu părți interzise sau restricționate.
+
+h) Beneficiar Terț: Recunoașteți și sunteți de acord că Apple și filialele Apple sunt beneficiari terți ai acestor Termeni și că, la acceptarea de către dumneavoastră a acestor Termeni, Apple va avea dreptul (și va fi considerat că a acceptat dreptul) de a aplica acești Termeni împotriva dumneavoastră ca beneficiar terț.`
+      },
+      {
+        title: '13. Acordul Google Play și Recunoașteri',
+        content: `Această secțiune se aplică pentru utilizatorii care descarcă Aplicația din Google Play Store:
+
+a) Recunoaștere: Recunoașteți că acești Termeni sunt încheiate între dumneavoastră și SuntOK, nu cu Google LLC ("Google"). SuntOK, nu Google, este singura responsabilă pentru Aplicație și conținutul acesteia.
+
+b) Achiziții: Toate achizițiile în aplicație și abonamentele sunt procesate prin sistemul de facturare Google Play și sunt supuse Termenilor de Serviciu Google Play.
+
+c) Întreținere și Suport: SuntOK este singura responsabilă pentru suportul produsului și întreținerea Aplicației.
+
+d) Licență: Licența acordată pentru Aplicație este supusă Termenilor de Serviciu Google Play.`
+      },
+      {
+        title: '14. Declinarea Garanțiilor',
         content: `APLICAȚIA ESTE FURNIZATĂ "CA ATARE" ȘI "DUPĂ DISPONIBILITATE", FĂRĂ GARANȚII DE NICIUN FEL, FIE EXPRESS SAU IMPLICIT.
 
 ÎN MĂSURA MAXIMĂ PERMISĂ DE LEGE, DECLINĂM TOATE GARANȚIILE, INCLUSIV, DAR FĂRĂ A SE LIMITA LA:
@@ -105,7 +202,7 @@ NU GARANTĂM CĂ:
 • Aplicația este lipsită de viruși sau componente dăunătoare`
       },
       {
-        title: '9. Limitarea Răspunderii',
+        title: '15. Limitarea Răspunderii',
         content: `ÎN MĂSURA MAXIMĂ PERMISĂ DE LEGEA APLICABILĂ:
 
 a) ÎN NICIUN CAZ COMPANIA, AFILIAȚII, LICENȚIATORII, FURNIZORII DE SERVICII, ANGAJAȚII, AGENȚII, FUNCȚIONARII SAU DIRECTORII SĂI NU VOR FI RĂSPUNZĂTORI PENTRU DAUNE INDIRECTE, INCIDENTALE, SPECIALE, CONSECINȚIALE SAU PUNITIVE, INCLUSIV, DAR FĂRĂ A SE LIMITA LA:
@@ -120,8 +217,8 @@ b) RĂSPUNDEREA NOASTRĂ TOTALĂ PENTRU ORICE RECLAMAȚII LEGATE DE ACEȘTI TERM
 c) LIMITĂRILE DE MAI SUS SE APLICĂ CHIAR DACĂ REMEDIEREA NU ÎȘI ATINGE SCOPUL ESENȚIAL.`
       },
       {
-        title: '10. Despăgubire',
-        content: `Sunteți de acord să apărați, despăgubiți și să exonerați Compania și afiliații, licențiatorii și furnizorii de servicii ai acesteia, precum și funcționarii, directorii, angajații, contractorii, agenții, licențiatorii, furnizorii, succesorii și cesionarii acestora de și împotriva oricăror reclamații, răspunderi, daune, judecăți, premii, pierderi, costuri, cheltuieli sau onorarii (inclusiv onorarii rezonabile de avocat) rezultate din sau legate de:
+        title: '16. Despăgubire',
+        content: `Sunteți de acord să apărați, despăgubiți și să exonerați Compania și afiliații, licențiatorii și furnizorii de servicii ai acesteia, precum și funcționarii, directorii, angajații, contractorii, agenții, licențiatorii, furnizorii, succesorii și cesionarii acestora de și împotriva oricăror reclamații, răspunderi, daune, judecăți, premii, pierderi, costuri, cheltuieli sau onorarii (inclusiv onorii rezonabile de avocat) rezultate din sau legate de:
 
 • Încălcarea de către dumneavoastră a acestor Termeni
 • Utilizarea de către dumneavoastră a Aplicației
@@ -129,18 +226,19 @@ c) LIMITĂRILE DE MAI SUS SE APLICĂ CHIAR DACĂ REMEDIEREA NU ÎȘI ATINGE SCOP
 • Încălcarea oricărei legi sau a drepturilor unui terț`
       },
       {
-        title: '11. Încetare',
-        content: `a) Încetare de către Dumneavoastră: Puteți înceta utilizarea Aplicației în orice moment prin dezinstalarea acesteia de pe dispozitivul dumneavoastră.
+        title: '17. Încetare',
+        content: `a) Încetare de către Dumneavoastră: Puteți înceta utilizarea Aplicației în orice moment prin dezinstalarea acesteia de pe dispozitivul dumneavoastră. Pentru a anula un abonament, trebuie să îl anulați prin setările contului App Store sau Google Play Store înainte de dezinstalare.
 
 b) Încetare de către Noi: Ne rezervăm dreptul de a suspenda sau înceta accesul dumneavoastră la Aplicație în orice moment, din orice motiv, inclusiv, dar fără a se limita la încălcarea acestor Termeni.
 
 c) Efectele Încetării: La încetare:
 • Licența dumneavoastră de utilizare a Aplicației va fi revocată imediat
 • Putem șterge datele contului și informațiile asociate
+• Abonamentele active vor continua până la sfârșitul perioadei curente de facturare, cu excepția cazului în care sunt anulate
 • Secțiunile care prin natura lor ar trebui să supraviețuiască încetării vor rămâne în vigoare`
       },
       {
-        title: '12. Legea Aplicabilă și Soluționarea Litigiilor',
+        title: '18. Legea Aplicabilă și Soluționarea Litigiilor',
         content: `a) Legea Aplicabilă: Acești Termeni vor fi guvernați și interpretați în conformitate cu legile României, fără a ține cont de prevederile privind conflictul de legi.
 
 b) Jurisdicție: Orice litigiu care rezultă din sau în legătură cu acești Termeni va fi supus jurisdicției exclusive a instanțelor din România.
@@ -150,7 +248,7 @@ c) Arbitraj: Pentru orice litigii care nu pot fi rezolvate amiabil, părțile su
 d) Renunțare la Acțiune Colectivă: Sunteți de acord că orice litigii vor fi conduse doar pe bază individuală și nu într-o acțiune colectivă, consolidată sau reprezentativă.`
       },
       {
-        title: '13. Prevederi Generale',
+        title: '19. Prevederi Generale',
         content: `a) Întregul Acord: Acești Termeni constituie întregul acord între dumneavoastră și noi privind utilizarea Aplicației și înlocuiesc toate acordurile anterioare.
 
 b) Renunțare: Niciun eșec sau întârziere a noastră în exercitarea oricărui drept sau remediu nu va constitui o renunțare la acel drept sau remediu.
@@ -162,19 +260,32 @@ d) Cesiune: Nu puteți cesiona sau transfera acești Termeni fără acordul nost
 e) Forță Majoră: Nu vom fi răspunzători pentru niciun eșec sau întârziere în îndeplinirea obligațiilor noastre cauzate de circumstanțe în afara controlului nostru rezonabil.`
       },
       {
-        title: '14. Informații de Contact',
-        content: `Dacă aveți întrebări despre acești Termeni și Condiții, vă rugăm să ne contactați la:
+        title: '20. Link-uri Importante',
+        content: `Vă rugăm să consultați și următoarele documente:
+
+• Politica de Confidențialitate: Disponibilă la https://suntok.app/#/privacy-policy
+• Termeni și Condiții: Disponibili la https://suntok.app/#/terms-of-service
+• Contact și Suport: Disponibil la https://suntok.app/#/contact`
+      },
+      {
+        title: '21. Informații de Contact',
+        content: `Dacă aveți întrebări despre acești Termeni și Condiții, achiziții în aplicație sau abonamente, vă rugăm să ne contactați la:
 
 SuntOK
+Dezvoltator: CRISPOSOFT S.R.L.
 Email: crisposoft@gmail.com
 Locație: România, Uniunea Europeană
+
+Pentru probleme legate de abonament sau facturare:
+• Utilizatori iOS: Contactați suportul Apple la https://support.apple.com
+• Utilizatori Android: Contactați suportul Google Play la https://support.google.com/googleplay
 
 Prin utilizarea Aplicației SuntOK, confirmați că ați citit, înțeles și sunteți de acord să fiți obligat de acești Termeni și Condiții.`
       }
     ]
   } : {
     title: 'Terms of Service',
-    lastUpdated: 'Last Updated: January 17, 2026',
+    lastUpdated: 'Last Updated: January 27, 2026',
     sections: [
       {
         title: '1. Acceptance of Terms',
@@ -197,7 +308,72 @@ IMPORTANT: SuntOK is NOT an emergency service. The App is designed as a suppleme
 In case of a medical or safety emergency, always call emergency services immediately.`
       },
       {
-        title: '3. Eligibility',
+        title: '3. Free and Premium Versions',
+        content: `SuntOK offers both a free version and a premium version (SuntOK Premium):
+
+a) Free Version includes:
+• Basic safety check-in
+• One emergency contact
+• Fixed check-in frequency (2 days)
+• Standard notifications
+
+b) Premium Version (subscription) includes all free features plus:
+• Custom check-in frequencies (1-30 days)
+• Multiple emergency contacts
+• Custom emergency messages
+• Priority notifications
+• Ad-free experience
+• Priority support`
+      },
+      {
+        title: '4. In-App Purchases and Subscriptions',
+        content: `a) Available Subscriptions:
+SuntOK Premium is available through the following subscription options:
+• Monthly Subscription: 4.99 RON/month
+• Annual Subscription: 49.99 RON/year (save ~17%)
+
+b) Payment Processing:
+• All payments for SuntOK Premium subscriptions are processed through the Apple App Store (for iOS) or Google Play Store (for Android)
+• We do not process or store your payment information directly
+• Payment will be charged to your Apple ID or Google Play account upon confirmation of purchase
+• All prices include applicable taxes based on your location
+
+c) Subscription Renewal:
+• Subscriptions automatically renew at the end of each billing period
+• Your account will be charged for renewal within 24 hours prior to the end of the current period
+• You can manage and cancel your subscriptions by going to your account settings in the App Store or Google Play Store
+
+d) Cancellation:
+• You may cancel your subscription at any time through the App Store or Google Play Store account settings
+• Cancellation takes effect at the end of the current billing period
+• No refunds are provided for partial subscription periods
+• Upon cancellation, you will still have access to premium features until the end of your paid period
+
+e) Price Changes:
+• We reserve the right to change subscription prices
+• You will be notified in advance of any price changes
+• Continuing your subscription after the price change constitutes acceptance of the new price`
+      },
+      {
+        title: '5. Refund Policy',
+        content: `All purchases are processed through the Apple App Store or Google Play Store and are subject to their respective refund policies:
+
+• For iOS: Refund requests must be made directly to Apple through their "Report a Problem" page or by contacting Apple Support
+• For Android: Refund requests must be made directly through the Google Play Store or by contacting Google Support
+
+We do not process refunds directly. All refund requests are at the discretion of Apple or Google according to their own policies.`
+      },
+      {
+        title: '6. Free Trial Periods',
+        content: `We may offer free trial periods for SuntOK Premium from time to time:
+
+• Free trials provide full access to premium features
+• At the end of the trial period, the subscription will automatically convert to a paid subscription unless you cancel before the trial expires
+• Cancel through the App Store or Google Play Store account settings to avoid being charged
+• Any unused portion of a free trial will be forfeited when you purchase a subscription`
+      },
+      {
+        title: '7. Eligibility',
         content: `To use the App, you must:
 
 • Be at least 16 years of age
@@ -207,7 +383,7 @@ In case of a medical or safety emergency, always call emergency services immedia
 By using the App, you represent and warrant that you meet all eligibility requirements. If you are using the App on behalf of another person (such as an elderly parent), you represent that you have the legal authority to do so and that such person has consented.`
       },
       {
-        title: '4. User Account',
+        title: '8. User Account',
         content: `a) Account Creation: The App uses anonymous authentication. You are not required to create an account with an email or password.
 
 b) Account Security: You are responsible for maintaining the security of your device and access to the App. We are not liable for any loss resulting from unauthorized access to your account or device.
@@ -215,7 +391,7 @@ b) Account Security: You are responsible for maintaining the security of your de
 c) Information Accuracy: You agree to provide accurate and current information, particularly your emergency contact's phone number. Inaccurate information may result in notification failures.`
       },
       {
-        title: '5. Acceptable Use',
+        title: '9. Acceptable Use',
         content: `You agree to use the App only for lawful purposes and in accordance with these Terms. You agree NOT to:
 
 • Use the App for any unlawful or unauthorized purpose
@@ -231,8 +407,8 @@ c) Information Accuracy: You agree to provide accurate and current information, 
 We reserve the right to suspend or terminate your access to the App for violation of these terms.`
       },
       {
-        title: '6. Emergency Notification Service',
-        content: `a) Operation: If you do not check in on the App for 48 consecutive hours, we will send an SMS notification to your designated emergency contact.
+        title: '10. Emergency Notification Service',
+        content: `a) Operation: If you do not check in on the App within the configured interval, we will send an SMS notification to your designated emergency contact.
 
 b) Limitations: You understand and agree that:
 • SMS notifications depend on telecommunications networks and may be delayed or fail
@@ -244,7 +420,7 @@ b) Limitations: You understand and agree that:
 c) Emergency Contact Consent: By designating an emergency contact, you represent that you have obtained their consent to receive SMS notifications on your behalf.`
       },
       {
-        title: '7. Intellectual Property Rights',
+        title: '11. Intellectual Property Rights',
         content: `a) Our Ownership: The App, including all content, features, and functionality (including but not limited to information, software, text, displays, images, video, audio, and the design thereof) is owned by the Company, its licensors, or other providers of such material and is protected by copyright, trademark, patent, trade secret, and other intellectual property laws.
 
 b) Limited License: We grant you a limited, non-exclusive, non-transferable, revocable license to download, install, and use the App for your personal, non-commercial use, subject to these Terms.
@@ -256,24 +432,56 @@ c) Restrictions: You may not:
 • Use the App to create a competing product or service`
       },
       {
-        title: '8. Disclaimer of Warranties',
-        content: `THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+        title: '12. Apple Agreement and Acknowledgements',
+        content: `This section applies to users who download the App from the Apple App Store:
 
-TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO:
-• Implied warranties of merchantability
-• Fitness for a particular purpose
-• Non-infringement
-• Uninterrupted or error-free operation
-• Accuracy or reliability of information
+a) Acknowledgement: You acknowledge that these Terms are entered into between you and SuntOK, not with Apple Inc. ("Apple"). SuntOK, not Apple, is solely responsible for the App and its content.
 
-WE DO NOT WARRANT THAT:
-• The App will meet your requirements
-• The App will be available at any particular time or location
-• Any errors or defects will be corrected
-• The App is free of viruses or harmful components`
+b) License: The license granted to you for the App is limited to a non-transferable license to use the App on any Apple device that you own or control, as permitted by the Usage Rules in the Apple App Store Terms of Service.
+
+c) Maintenance and Support: SuntOK is solely responsible for providing any maintenance and support services for the App. You acknowledge that Apple has no obligation to provide maintenance and support services for the App.
+
+d) Warranty: In the event that the App fails to conform to any applicable warranty, you may notify Apple and Apple will refund the purchase price of the App, if any. To the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the App.
+
+e) Product Claims: SuntOK, not Apple, is responsible for addressing any claims by you or any third party relating to the App or your possession and/or use of the App.
+
+f) Intellectual Property: In the event of any third-party claim that the App or your possession and use of the App infringes that third party's intellectual property rights, SuntOK, not Apple, will be solely responsible for the investigation, defense, settlement, and discharge of any such claim.
+
+g) Legal Compliance: You represent and warrant that (i) you are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country; and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties.
+
+h) Third-Party Beneficiary: You acknowledge and agree that Apple, and Apple's subsidiaries, are third-party beneficiaries of these Terms, and that, upon your acceptance of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third-party beneficiary.`
       },
       {
-        title: '9. Limitation of Liability',
+        title: '13. Google Play Agreement and Acknowledgements',
+        content: `This section applies to users who download the App from the Google Play Store:
+
+a) Acknowledgement: You acknowledge that these Terms are entered into between you and SuntOK, not with Google LLC ("Google"). SuntOK, not Google, is solely responsible for the App and its content.
+
+b) Purchases: All in-app purchases and subscriptions are processed through Google Play's billing system and are subject to the Google Play Terms of Service.
+
+c) Maintenance and Support: SuntOK is solely responsible for product support and maintenance of the App.
+
+d) License: The license granted to you for the App is subject to the Google Play Terms of Service.`
+      },
+      {
+        title: '14. Declinarea Garanțiilor',
+        content: `APLICAȚIA ESTE FURNIZATĂ "CA ATARE" ȘI "DUPĂ DISPONIBILITATE", FĂRĂ GARANȚII DE NICIUN FEL, FIE EXPRESS SAU IMPLICIT.
+
+ÎN MĂSURA MAXIMĂ PERMISĂ DE LEGE, DECLINĂM TOATE GARANȚIILE, INCLUSIV, DAR FĂRĂ A SE LIMITA LA:
+• Garanții implicite de comercializare
+• Adecvare pentru un anumit scop
+• Neîncălcare
+• Funcționare neîntreruptă sau fără erori
+• Acuratețea sau fiabilitatea informațiilor
+
+NU GARANTĂM CĂ:
+• Aplicația va îndeplini cerințele dumneavoastră
+• Aplicația va fi disponibilă în orice moment sau locație
+• Orice erori sau defecte vor fi corectate
+• Aplicația este lipsită de viruși sau componente dăunătoare`
+      },
+      {
+        title: '15. Limitation of Liability',
         content: `TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:
 
 a) IN NO EVENT SHALL THE COMPANY, ITS AFFILIATES, LICENSORS, SERVICE PROVIDERS, EMPLOYEES, AGENTS, OFFICERS, OR DIRECTORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:
@@ -288,7 +496,7 @@ b) OUR TOTAL LIABILITY FOR ANY CLAIMS RELATED TO THESE TERMS OR THE APP SHALL NO
 c) THE ABOVE LIMITATIONS APPLY EVEN IF THE REMEDY FAILS OF ITS ESSENTIAL PURPOSE.`
       },
       {
-        title: '10. Indemnification',
+        title: '16. Indemnification',
         content: `You agree to defend, indemnify, and hold harmless the Company and its affiliates, licensors, and service providers, and its and their respective officers, directors, employees, contractors, agents, licensors, suppliers, successors, and assigns from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to:
 
 • Your violation of these Terms
@@ -297,18 +505,19 @@ c) THE ABOVE LIMITATIONS APPLY EVEN IF THE REMEDY FAILS OF ITS ESSENTIAL PURPOSE
 • Your violation of any law or the rights of a third party`
       },
       {
-        title: '11. Termination',
-        content: `a) Termination by You: You may terminate your use of the App at any time by uninstalling it from your device.
+        title: '17. Termination',
+        content: `a) Termination by You: You may terminate your use of the App at any time by uninstalling it from your device. To cancel a subscription, you must cancel it through the App Store or Google Play Store account settings before uninstalling.
 
 b) Termination by Us: We reserve the right to suspend or terminate your access to the App at any time, for any reason, including but not limited to violation of these Terms.
 
 c) Effects of Termination: Upon termination:
 • Your license to use the App will immediately be revoked
 • We may delete your account data and associated information
+• Active subscriptions will continue until the end of the current billing period unless cancelled
 • Sections that by their nature should survive termination will remain in effect`
       },
       {
-        title: '12. Governing Law and Dispute Resolution',
+        title: '18. Governing Law and Dispute Resolution',
         content: `a) Governing Law: These Terms shall be governed by and construed in accordance with the laws of Romania, without regard to conflict of law provisions.
 
 b) Jurisdiction: Any dispute arising out of or relating to these Terms shall be subject to the exclusive jurisdiction of the courts located in Romania.
@@ -318,7 +527,7 @@ c) Arbitration: For any disputes that cannot be resolved amicably, the parties a
 d) Class Action Waiver: You agree that any disputes will be conducted only on an individual basis and not in a class, consolidated, or representative action.`
       },
       {
-        title: '13. General Provisions',
+        title: '19. General Provisions',
         content: `a) Entire Agreement: These Terms constitute the entire agreement between you and us regarding the use of the App and supersede all prior agreements.
 
 b) Waiver: No failure or delay by us in exercising any right or remedy shall constitute a waiver of such right or remedy.
@@ -330,12 +539,25 @@ d) Assignment: You may not assign or transfer these Terms without our prior writ
 e) Force Majeure: We shall not be liable for any failure or delay in performing our obligations caused by circumstances beyond our reasonable control.`
       },
       {
-        title: '14. Contact Information',
-        content: `If you have any questions about these Terms of Service, please contact us at:
+        title: '20. Important Links',
+        content: `Please also review the following documents:
+
+• Privacy Policy: Available at https://suntok.app/#/privacy-policy
+• Terms of Service: Available at https://suntok.app/#/terms-of-service
+• Contact & Support: Available at https://suntok.app/#/contact`
+      },
+      {
+        title: '21. Contact Information',
+        content: `If you have any questions about these Terms of Service, in-app purchases, or subscriptions, please contact us at:
 
 SuntOK
+Developer: CRISPOSOFT S.R.L.
 Email: crisposoft@gmail.com
 Location: Romania, European Union
+
+For subscription or billing issues:
+• iOS Users: Contact Apple Support at https://support.apple.com
+• Android Users: Contact Google Play Support at https://support.google.com/googleplay
 
 By using the SuntOK App, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.`
       }
