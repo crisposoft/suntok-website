@@ -14,7 +14,7 @@ import Pricing from './pages/Pricing';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [currentPage, setCurrentPage] = useState<'home' | 'privacy' | 'terms' | 'contact' | 'pricing'>('home');
+  const [currentPage, setCurrentPage] = useState<'home' | 'privacy' | 'terms' | 'contact' | 'pricing' >('home');
 
   useEffect(() => {
     const handleScroll = () => {

@@ -124,7 +124,7 @@ export const en: TranslationKeys = {
 
   // Download
   download: {
-    badge: '🎉 Free for basic use!',
+    badge: ' Free for basic use!',
     title: 'Download SuntOK Today',
     description:
       'Join thousands of families who use SuntOK to stay connected and safe. Free, private, and takes just seconds to set up.',

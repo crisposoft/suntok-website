@@ -122,7 +122,7 @@ export const ro = {
 
   // Download
   download: {
-    badge: '🎉 Gratuit pentru utilizare de bază!',
+    badge: ' Gratuit pentru utilizare de bază!',
     title: 'Descarcă SuntOK Astăzi',
     description:
       'Alătură-te miilor de familii care folosesc SuntOK pentru a rămâne conectate și în siguranță. Gratuit, privat și durează doar câteva secunde să îl configurezi.',

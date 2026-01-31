@@ -37,35 +37,32 @@ const Footer = () => {
             <p className="text-gray-400 mb-6 max-w-md">
               {t.footer.description}
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               <a
-                href="#"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-500 transition-colors"
-                aria-label="Facebook"
+                href="https://apps.apple.com/ro/app/suntok/id6757980654"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+                aria-label="App Store"
               >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                </svg>
+                <img
+                  src="/badges/app-store-badge.svg"
+                  alt="Download on the App Store"
+                  className="h-10"
+                />
               </a>
               <a
-                href="#"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-500 transition-colors"
-                aria-label="Twitter"
+                href="https://play.google.com/store/apps/details?id=com.crisposoft.suntok"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+                aria-label="Google Play"
               >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                </svg>
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-500 transition-colors"
-                aria-label="Instagram"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" strokeWidth="2" />
-                  <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2" />
-                  <circle cx="17.5" cy="6.5" r="1.5" />
-                </svg>
+                <img
+                  src="/badges/google-play-badge.svg"
+                  alt="Get it on Google Play"
+                  className="h-10"
+                />
               </a>
             </div>
           </div>
